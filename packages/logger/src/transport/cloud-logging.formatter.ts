@@ -1,3 +1,4 @@
+import { SeverityName } from '../logger.interfaces'
 import { SeverityText } from '../logger.interfaces'
 import { Record }       from '../logger.interfaces'
 
@@ -8,17 +9,17 @@ const serviceContext = {
 
 const convertSeverity = (severity: SeverityText) => {
   switch (severity) {
-    case SeverityText.TRACE:
+    case SeverityName.TRACE:
       return 'DEFAULT'
-    case SeverityText.DEBUG:
+    case SeverityName.DEBUG:
       return 'DEBUG'
-    case SeverityText.INFO:
+    case SeverityName.INFO:
       return 'INFO'
-    case SeverityText.WARN:
+    case SeverityName.WARN:
       return 'WARNING'
-    case SeverityText.ERROR:
+    case SeverityName.ERROR:
       return 'ERROR'
-    case SeverityText.FATAL:
+    case SeverityName.FATAL:
       return 'EMERGENCY'
     default:
       return 'DEFAULT'
