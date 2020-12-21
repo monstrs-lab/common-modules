@@ -17,7 +17,7 @@ export type Body = string | Error | BodyData | any
 export type SeverityNumber = number
 
 // eslint-disable-next-line no-shadow
-export enum SeverityText {
+export enum SeverityName {
   TRACE = 'TRACE',
   DEBUG = 'DEBUG',
   INFO = 'INFO',
@@ -26,6 +26,8 @@ export enum SeverityText {
   FATAL = 'FATAL',
 }
 
+export type SeverityText = keyof typeof SeverityName
+
 export interface SeverityKind {
   text: SeverityText
   number: SeverityNumber
@@ -33,32 +35,32 @@ export interface SeverityKind {
 
 export class Severity {
   static TRACE: SeverityKind = {
-    text: SeverityText.TRACE,
+    text: SeverityName.TRACE,
     number: 1,
   }
 
   static DEBUG: SeverityKind = {
-    text: SeverityText.DEBUG,
+    text: SeverityName.DEBUG,
     number: 5,
   }
 
   static INFO: SeverityKind = {
-    text: SeverityText.INFO,
+    text: SeverityName.INFO,
     number: 9,
   }
 
   static WARN: SeverityKind = {
-    text: SeverityText.WARN,
+    text: SeverityName.WARN,
     number: 13,
   }
 
   static ERROR: SeverityKind = {
-    text: SeverityText.ERROR,
+    text: SeverityName.ERROR,
     number: 17,
   }
 
   static FATAL: SeverityKind = {
-    text: SeverityText.FATAL,
+    text: SeverityName.FATAL,
     number: 21,
   }
 }
