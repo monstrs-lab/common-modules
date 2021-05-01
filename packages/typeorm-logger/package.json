@@ -1,0 +1,25 @@
+{
+  "name": "@monstrs/typeorm-logger",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn app library build",
+    "postpack": "rm -rf dist",
+    "prepack": "yarn run build"
+  },
+  "devDependencies": {
+    "typeorm": "^0.2.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
+  },
+  "dependencies": {
+    "@monstrs/logger": "workspace:0.0.5"
+  }
+}
