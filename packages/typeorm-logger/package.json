@@ -12,14 +12,17 @@
     "prepack": "yarn run build"
   },
   "devDependencies": {
-    "typeorm": "^0.2.0"
+    "typeorm": "^0.2"
+  },
+  "dependencies": {
+    "@monstrs/logger": "workspace:0.0.6"
+  },
+  "peerDependencies": {
+    "typeorm": "^0.2"
   },
   "publishConfig": {
     "access": "public",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts"
-  },
-  "dependencies": {
-    "@monstrs/logger": "workspace:0.0.6"
   }
 }
