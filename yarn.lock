@@ -1073,7 +1073,9 @@ __metadata:
   resolution: "@monstrs/typeorm-logger@workspace:packages/typeorm-logger"
   dependencies:
     "@monstrs/logger": "workspace:0.0.6"
-    typeorm: ^0.2.0
+    typeorm: ^0.2
+  peerDependencies:
+    typeorm: ^0.2
   languageName: unknown
   linkType: soft
 
@@ -10040,7 +10042,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"typeorm@npm:^0.2.0":
+"typeorm@npm:^0.2":
   version: 0.2.32
   resolution: "typeorm@npm:0.2.32"
   dependencies:
