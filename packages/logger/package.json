@@ -8,19 +8,19 @@
   ],
   "scripts": {
     "build": "yarn app library build",
-    "postpack": "rm -rf dist",
-    "prepack": "yarn run build"
+    "prepack": "yarn run build",
+    "postpack": "rm -rf dist"
+  },
+  "dependencies": {
+    "pino": "^6.13.4"
   },
   "devDependencies": {
-    "@types/node": "^15.6.0",
+    "@types/node": "^17.0.10",
     "@types/pino": "^6.3.8"
   },
   "publishConfig": {
     "access": "public",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts"
-  },
-  "dependencies": {
-    "pino": "^6.11.3"
   }
 }

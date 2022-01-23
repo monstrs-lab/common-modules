@@ -1,4 +1,5 @@
 import type { Logger as ILogger } from 'typeorm'
+
 import { Logger }                 from '@monstrs/logger'
 
 export class TypeOrmLogger implements ILogger {
