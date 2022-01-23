@@ -8,14 +8,14 @@
   ],
   "scripts": {
     "build": "yarn app library build",
-    "postpack": "rm -rf dist",
-    "prepack": "yarn run build"
-  },
-  "devDependencies": {
-    "typeorm": "^0.2"
+    "prepack": "yarn run build",
+    "postpack": "rm -rf dist"
   },
   "dependencies": {
     "@monstrs/logger": "workspace:0.0.6"
+  },
+  "devDependencies": {
+    "typeorm": "^0.2"
   },
   "peerDependencies": {
     "typeorm": "^0.2"
