@@ -47,10 +47,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@jest/core", "virtual:06d3ecb838501373e807bb0c64b7cfc1f80d601e5c38077c841a8a85b23bc0dc02602c8d52533577e9dbb1c973db24f5c79ed4556afd081302410cc97ef746dd#npm:27.4.7"],
             ["@monstrs/config-jest", "npm:0.0.10"],
-            ["@monstrs/schematics", "npm:0.0.15"],
+            ["@monstrs/schematics", "npm:0.0.19"],
             ["@types/eslint", "npm:8.4.1"],
             ["@types/jest", "npm:27.4.0"],
-            ["@types/node", "npm:17.0.10"],
+            ["@types/node", "npm:17.0.12"],
             ["eslint", "npm:8.7.0"],
             ["husky", "npm:7.0.4"],
             ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=de8f8a"]
@@ -1444,36 +1444,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/logger/",
           "packageDependencies": [
             ["@monstrs/logger", "workspace:packages/logger"],
-            ["@types/node", "npm:17.0.10"],
-            ["@types/pino", "npm:6.3.8"],
+            ["@types/node", "npm:17.0.12"],
+            ["@types/pino", "npm:6.3.12"],
             ["pino", "npm:6.13.4"]
           ],
           "linkType": "SOFT",
         }]
       ]],
       ["@monstrs/schematics", [
-        ["npm:0.0.15", {
-          "packageLocation": "./.yarn/cache/@monstrs-schematics-npm-0.0.15-6df713e677-7aed01309f.zip/node_modules/@monstrs/schematics/",
+        ["npm:0.0.19", {
+          "packageLocation": "./.yarn/cache/@monstrs-schematics-npm-0.0.19-69e5247643-3801570a64.zip/node_modules/@monstrs/schematics/",
           "packageDependencies": [
-            ["@monstrs/schematics", "npm:0.0.15"],
+            ["@monstrs/schematics", "npm:0.0.19"],
             ["@angular-devkit/core", "virtual:184b2c54223bca244453cb3eea82279816b2a72ab1a2ab42893a757dd2a9477490b57fcaca5371628f0b2b2e32642bd79567a0f75348c4909f699c7dd696968b#npm:13.1.4"],
             ["@angular-devkit/schematics", "npm:13.1.4"],
             ["@monstrs/config-typescript", "npm:0.0.10"],
-            ["@monstrs/schematics-utils", "npm:0.1.9"]
+            ["@monstrs/schematics-utils", "npm:0.1.11"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@monstrs/schematics-utils", [
-        ["npm:0.1.9", {
-          "packageLocation": "./.yarn/cache/@monstrs-schematics-utils-npm-0.1.9-d1e5b13068-f811984e30.zip/node_modules/@monstrs/schematics-utils/",
+        ["npm:0.1.11", {
+          "packageLocation": "./.yarn/cache/@monstrs-schematics-utils-npm-0.1.11-3e36c80c95-6d4fc709b0.zip/node_modules/@monstrs/schematics-utils/",
           "packageDependencies": [
-            ["@monstrs/schematics-utils", "npm:0.1.9"],
+            ["@monstrs/schematics-utils", "npm:0.1.11"],
             ["@angular-devkit/core", "virtual:184b2c54223bca244453cb3eea82279816b2a72ab1a2ab42893a757dd2a9477490b57fcaca5371628f0b2b2e32642bd79567a0f75348c4909f699c7dd696968b#npm:13.1.4"],
             ["@angular-devkit/schematics", "npm:13.1.4"],
+            ["js-yaml", "npm:4.1.0"],
             ["semver", "npm:6.3.0"],
-            ["strip-json-comments", "npm:3.0.1"],
-            ["yaml", "npm:1.10.2"]
+            ["strip-json-comments", "npm:3.0.1"]
           ],
           "linkType": "HARD",
         }]
@@ -1671,15 +1671,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:17.0.10", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-17.0.10-c0e46c1462-979e83d642.zip/node_modules/@types/node/",
+        ["npm:17.0.12", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-17.0.12-719f3bab17-f7e4c384b7.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:17.0.10"]
+            ["@types/node", "npm:17.0.12"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@types/pino", [
+        ["npm:6.3.12", {
+          "packageLocation": "./.yarn/cache/@types-pino-npm-6.3.12-19c7982858-8017351466.zip/node_modules/@types/pino/",
+          "packageDependencies": [
+            ["@types/pino", "npm:6.3.12"],
+            ["@types/node", "npm:15.6.0"],
+            ["@types/pino-pretty", "npm:4.7.0"],
+            ["@types/pino-std-serializers", "npm:2.4.1"],
+            ["sonic-boom", "npm:2.6.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:6.3.8", {
           "packageLocation": "./.yarn/cache/@types-pino-npm-6.3.8-fe608df63f-d5772ebd96.zip/node_modules/@types/pino/",
           "packageDependencies": [
@@ -5604,6 +5615,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["flatstr", "npm:1.0.12"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:2.6.0", {
+          "packageLocation": "./.yarn/cache/sonic-boom-npm-2.6.0-ad9d859ac1-7d7e3de33c.zip/node_modules/sonic-boom/",
+          "packageDependencies": [
+            ["sonic-boom", "npm:2.6.0"],
+            ["atomic-sleep", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["source-map", [
@@ -6232,10 +6251,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["utils", "workspace:."],
             ["@jest/core", "virtual:06d3ecb838501373e807bb0c64b7cfc1f80d601e5c38077c841a8a85b23bc0dc02602c8d52533577e9dbb1c973db24f5c79ed4556afd081302410cc97ef746dd#npm:27.4.7"],
             ["@monstrs/config-jest", "npm:0.0.10"],
-            ["@monstrs/schematics", "npm:0.0.15"],
+            ["@monstrs/schematics", "npm:0.0.19"],
             ["@types/eslint", "npm:8.4.1"],
             ["@types/jest", "npm:27.4.0"],
-            ["@types/node", "npm:17.0.10"],
+            ["@types/node", "npm:17.0.12"],
             ["eslint", "npm:8.7.0"],
             ["husky", "npm:7.0.4"],
             ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=de8f8a"]
@@ -6523,15 +6542,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/yallist-npm-4.0.0-b493d9e907-343617202a.zip/node_modules/yallist/",
           "packageDependencies": [
             ["yallist", "npm:4.0.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["yaml", [
-        ["npm:1.10.2", {
-          "packageLocation": "./.yarn/cache/yaml-npm-1.10.2-0e780aebdf-ce4ada136e.zip/node_modules/yaml/",
-          "packageDependencies": [
-            ["yaml", "npm:1.10.2"]
           ],
           "linkType": "HARD",
         }]
