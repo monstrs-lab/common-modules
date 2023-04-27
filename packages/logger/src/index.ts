@@ -10,4 +10,5 @@ export { SimpleLogRecordProcessor } from '@opentelemetry/sdk-logs'
 export { LoggerProvider } from '@opentelemetry/sdk-logs'
 
 export * from './logger.configuration.js'
+export * from './logger.constants.js'
 export * from './logger.js'
