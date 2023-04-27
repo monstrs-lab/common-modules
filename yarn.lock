@@ -964,7 +964,7 @@ __metadata:
   resolution: "@monstrs/logger@workspace:packages/logger"
   dependencies:
     "@jest/globals": "npm:^29.5.0"
-    "@opentelemetry/api": "npm:^1.4.1"
+    "@opentelemetry/api": "npm:*"
     "@opentelemetry/api-logs": "npm:^0.38.0"
     "@opentelemetry/core": "npm:*"
     "@opentelemetry/sdk-logs": "npm:^0.37.0"
@@ -1032,7 +1032,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/api@npm:^1.0.0, @opentelemetry/api@npm:^1.4.1":
+"@opentelemetry/api@npm:*, @opentelemetry/api@npm:^1.0.0":
   version: 1.4.1
   resolution: "@opentelemetry/api@npm:1.4.1"
   checksum: e856b2e15abb595964acffc3d0f966d42bc07b5e93850200b46a03b896fe319c98137b91b29d93d582b2d454352640edee1022e9a468b7f9b20aef9adc1d63ac
