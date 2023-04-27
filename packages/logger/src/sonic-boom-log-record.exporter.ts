@@ -25,7 +25,9 @@ export class SonicBoomLogRecordExporter extends ConsoleLogRecordExporter {
   ): void {
     for (const logRecord of logRecords) {
       // @ts-ignore
-      this.#stream.write(JSON.stringify(this._exportInfo(logRecord))) // eslint-disable-line
+      const log = JSON.stringify(this._exportInfo(logRecord)) // eslint-disable-line
+
+      this.#stream.write(`${log}\n`)
     }
 
     done?.({ code: ExportResultCode.SUCCESS })
