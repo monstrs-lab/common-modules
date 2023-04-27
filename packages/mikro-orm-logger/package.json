@@ -1,6 +1,6 @@
 {
   "name": "@monstrs/mikro-orm-logger",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -17,7 +17,7 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@monstrs/logger": "workspace:0.0.8"
+    "@monstrs/logger": "workspace:0.0.9"
   },
   "devDependencies": {
     "@jest/globals": "^29.5.0",
