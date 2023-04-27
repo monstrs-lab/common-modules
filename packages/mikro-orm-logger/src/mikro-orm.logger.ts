@@ -1,10 +1,16 @@
-import type { Logger as ILogger } from '@mikro-orm/core'
-import type { LoggerNamespace }   from '@mikro-orm/core'
-import type { LogContext }        from '@mikro-orm/core'
-import type { LoggerOptions }     from '@mikro-orm/core'
-import type { Attributes }        from '@monstrs/logger'
+import type { Logger as ILogger }                from '@mikro-orm/core'
+import type { LoggerNamespace }                  from '@mikro-orm/core'
+import type { LogContext }                       from '@mikro-orm/core'
+import type { LoggerOptions }                    from '@mikro-orm/core'
+import type { Attributes }                       from '@monstrs/logger'
 
-import { Logger }                 from '@monstrs/logger'
+import { Logger }                                from '@monstrs/logger'
+
+import { LOGGER_SQL_ATTRIBUTE_NAME }             from './mikro-orm.logger.constants.js'
+import { LOGGER_PARAMS_ATTRIBUTE_NAME }          from './mikro-orm.logger.constants.js'
+import { LOGGER_CONNECTION_TYPE_ATTRIBUTE_NAME } from './mikro-orm.logger.constants.js'
+import { LOGGER_CONNECTION_NAME_ATTRIBUTE_NAME } from './mikro-orm.logger.constants.js'
+import { LOGGER_TOOK_ATTRIBUTE_NAME }            from './mikro-orm.logger.constants.js'
 
 export class MikroORMLogger implements ILogger {
   #logger: Logger = new Logger('mikro-orm')
@@ -33,23 +39,23 @@ export class MikroORMLogger implements ILogger {
     const attributes: Attributes = {}
 
     if (context?.query) {
-      attributes.sql = context.query
+      attributes[LOGGER_SQL_ATTRIBUTE_NAME] = context.query
     }
 
     if (context?.params) {
-      attributes.params = context.params as any[]
+      attributes[LOGGER_PARAMS_ATTRIBUTE_NAME] = context.params as any[]
     }
 
     if (context?.connection?.type) {
-      attributes.conntectionType = context.connection.type
+      attributes[LOGGER_CONNECTION_TYPE_ATTRIBUTE_NAME] = context.connection.type
     }
 
     if (context?.connection?.name) {
-      attributes.conntectionName = context.connection.name
+      attributes[LOGGER_CONNECTION_NAME_ATTRIBUTE_NAME] = context.connection.name
     }
 
     if (context?.took) {
-      attributes.took = context.took
+      attributes[LOGGER_TOOK_ATTRIBUTE_NAME] = context.took
     }
 
     if (context?.level === 'error') {
