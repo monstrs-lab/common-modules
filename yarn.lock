@@ -959,7 +959,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/logger@workspace:0.0.8, @monstrs/logger@workspace:packages/logger":
+"@monstrs/logger@workspace:0.0.9, @monstrs/logger@workspace:packages/logger":
   version: 0.0.0-use.local
   resolution: "@monstrs/logger@workspace:packages/logger"
   dependencies:
@@ -980,7 +980,7 @@ __metadata:
   dependencies:
     "@jest/globals": "npm:^29.5.0"
     "@mikro-orm/core": "npm:^5.6.1"
-    "@monstrs/logger": "workspace:0.0.8"
+    "@monstrs/logger": "workspace:0.0.9"
     "@types/node": "npm:^18.16.1"
   peerDependencies:
     "@mikro-orm/core": ^5
