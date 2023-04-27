@@ -1,0 +1,3 @@
+releases:
+  "@monstrs/logger": patch
+  "@monstrs/mikro-orm-logger": patch
