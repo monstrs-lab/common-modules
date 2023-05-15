@@ -21,10 +21,10 @@
     "strict": true,
     "strictPropertyInitialization": false,
     "sourceMap": false,
+    "outDir": "./dist",
     "module": "nodenext",
     "target": "es2021",
-    "jsx": "react",
-    "outDir": "./dist"
+    "jsx": "react"
   },
-  "include": ["packages/**/*"]
+  "include": ["project.types.d.ts", "packages/**/*"]
 }

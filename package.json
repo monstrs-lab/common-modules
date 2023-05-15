@@ -5,12 +5,12 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@monstrs/code-runtime": "^0.1.5",
+    "@monstrs/tools-runtime": "^0.0.3",
     "@types/node": "^18.16.1",
     "husky": "8.0.3",
     "typescript": "^5.0.4"
   },
-  "packageManager": "yarn@3.5.0",
+  "packageManager": "yarn@3.5.1",
   "tools": {
     "schematic": {
       "collection": "@monstrs/schematics",

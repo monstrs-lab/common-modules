@@ -19,7 +19,7 @@ export class MikroORMLogger implements ILogger {
 
   constructor(private readonly options: LoggerOptions) {}
 
-  setDebugMode(debugMode: boolean | LoggerNamespace[]): void {
+  setDebugMode(debugMode: Array<LoggerNamespace> | boolean): void {
     this.debugMode = debugMode
   }
 
@@ -43,7 +43,7 @@ export class MikroORMLogger implements ILogger {
     }
 
     if (context?.params) {
-      attributes[LOGGER_PARAMS_ATTRIBUTE_NAME] = context.params as any[]
+      attributes[LOGGER_PARAMS_ATTRIBUTE_NAME] = context.params as Array<any>
     }
 
     if (context?.connection?.type) {
@@ -75,7 +75,7 @@ export class MikroORMLogger implements ILogger {
     this.log(namespace, message, { ...context, level: 'warning' })
   }
 
-  logQuery(context: { query: string } & LogContext): void {
+  logQuery(context: LogContext & { query: string }): void {
     this.log('query', context.took ? `Exec query took ${context.took} ms` : 'Exec query', context)
   }
 }
