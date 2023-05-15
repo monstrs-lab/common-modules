@@ -18,7 +18,7 @@ export class LoggerConfiguration {
 
   private static getDebug() {
     if (!LoggerConfiguration.debug) {
-      LoggerConfiguration.debug = (process.env.DEBUG || '').split(',') as Array<string>
+      LoggerConfiguration.debug = (process.env.DEBUG || '').split(',')
     }
 
     return LoggerConfiguration.debug
