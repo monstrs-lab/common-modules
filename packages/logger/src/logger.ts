@@ -38,8 +38,15 @@ export class Logger {
     this.log(SeverityNumber.WARN, body, attributes)
   }
 
-  error(body: string, attributes?: Attributes, context?: Context): void {
-    this.log(SeverityNumber.ERROR, body, attributes)
+  error(body: Error | string, attributes?: Attributes, context?: Context): void {
+    if (body instanceof Error) {
+      this.log(SeverityNumber.ERROR, body.message, {
+        ...(attributes || {}),
+        '@stack': body.stack,
+      })
+    } else {
+      this.log(SeverityNumber.ERROR, body, attributes)
+    }
   }
 
   fatal(body: string, attributes?: Attributes, context?: Context): void {
