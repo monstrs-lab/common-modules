@@ -15,7 +15,7 @@ export class ConsoleLogRecordExporter extends BaseConsoleLogRecordExporter {
   ): void {
     for (const logRecord of logRecords) {
       // @ts-expect-error
-      console.log(JSON.stringify(this._exportInfo(logRecord))) // eslint-disable-line
+      process.stdout.write(JSON.stringify(this._exportInfo(logRecord))) // eslint-disable-line
     }
 
     done?.({ code: ExportResultCode.SUCCESS })
