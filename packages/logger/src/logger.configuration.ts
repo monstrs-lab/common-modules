@@ -7,10 +7,14 @@ export class LoggerConfiguration {
 
   private static getSeverityNumber() {
     if (!LoggerConfiguration.severityNumber) {
-      LoggerConfiguration.severityNumber =
-        process.env.LOG_LEVEL && SeverityNumber[process.env.LOG_LEVEL]
-          ? SeverityNumber[process.env.LOG_LEVEL]
-          : SeverityNumber.INFO
+      if (process.env.LOG_LEVEL) {
+        LoggerConfiguration.severityNumber =
+          SeverityNumber[process.env.LOG_LEVEL] >= 0
+            ? SeverityNumber[process.env.LOG_LEVEL]
+            : SeverityNumber.INFO
+      } else {
+        LoggerConfiguration.severityNumber = SeverityNumber.INFO
+      }
     }
 
     return LoggerConfiguration.severityNumber
@@ -24,14 +28,11 @@ export class LoggerConfiguration {
     return LoggerConfiguration.debug
   }
 
-  private static acceptDebug(name?: string) {
-    return name && LoggerConfiguration.getDebug().includes(name)
-  }
-
   static accept(severityNumber: SeverityNumber, debug?: string) {
-    return (
-      severityNumber <= LoggerConfiguration.getSeverityNumber() ||
-      LoggerConfiguration.acceptDebug(debug)
-    )
+    if (debug && LoggerConfiguration.getDebug().includes(debug)) {
+      return true
+    }
+
+    return severityNumber >= LoggerConfiguration.getSeverityNumber()
   }
 }
