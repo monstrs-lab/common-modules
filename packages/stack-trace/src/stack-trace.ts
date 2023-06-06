@@ -19,7 +19,7 @@ export interface StackFrame extends StackLineData {
 export class StackTrace {
   constructor(public readonly frames: Array<StackFrame>) {}
 
-  get topFrame() {
+  get topFrame(): StackFrame | undefined {
     return this.frames.find((entry) => entry.file)
   }
 }
