@@ -17,7 +17,7 @@ export const load = (file: string, target: string): string | null => {
   }
 }
 
-export const parse = (source): SourceMapPayload | null => {
+export const parse = (source: string): SourceMapPayload | null => {
   try {
     // eslint-disable-next-line prefer-regex-literals
     const dataUriRegExp = new RegExp('(?<=base64,)(.*?)(?=\\\\n)')
