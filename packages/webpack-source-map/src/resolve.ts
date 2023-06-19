@@ -25,7 +25,7 @@ export const parse = (source: string): SourceMapPayload | null => {
     const [datauri] = source.match(dataUriRegExp) || []
 
     if (datauri) {
-      return JSON.parse(Buffer.from(datauri, 'base64').toString())
+      return JSON.parse(Buffer.from(datauri, 'base64').toString()) as SourceMapPayload
     }
   } catch (error) {
     if (error instanceof Error) {
