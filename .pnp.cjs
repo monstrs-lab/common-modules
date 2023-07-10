@@ -37,7 +37,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@monstrs/tools-runtime", "npm:0.2.12"],\
-          ["@types/node", "npm:18.16.1"],\
+          ["@types/node", "npm:20.4.1"],\
           ["typescript", "patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
         ],\
         "linkType": "SOFT"\
@@ -1229,17 +1229,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@jest/environment", [\
-      ["npm:29.5.0", {\
-        "packageLocation": "./.yarn/cache/@jest-environment-npm-29.5.0-e56073a8da-1fbe63cbfb.zip/node_modules/@jest/environment/",\
-        "packageDependencies": [\
-          ["@jest/environment", "npm:29.5.0"],\
-          ["@jest/fake-timers", "npm:29.5.0"],\
-          ["@jest/types", "npm:29.5.0"],\
-          ["@types/node", "npm:18.16.1"],\
-          ["jest-mock", "npm:29.5.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:29.6.1", {\
         "packageLocation": "./.yarn/cache/@jest-environment-npm-29.6.1-cf8e949ec7-9c9fddcbec.zip/node_modules/@jest/environment/",\
         "packageDependencies": [\
@@ -1253,15 +1242,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@jest/expect", [\
-      ["npm:29.5.0", {\
-        "packageLocation": "./.yarn/cache/@jest-expect-npm-29.5.0-5a0f59dbb2-447e7450af.zip/node_modules/@jest/expect/",\
-        "packageDependencies": [\
-          ["@jest/expect", "npm:29.5.0"],\
-          ["expect", "npm:29.5.0"],\
-          ["jest-snapshot", "npm:29.5.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:29.6.1", {\
         "packageLocation": "./.yarn/cache/@jest-expect-npm-29.6.1-1508c7fd3e-7766e9e02e.zip/node_modules/@jest/expect/",\
         "packageDependencies": [\
@@ -1273,14 +1253,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@jest/expect-utils", [\
-      ["npm:29.5.0", {\
-        "packageLocation": "./.yarn/cache/@jest-expect-utils-npm-29.5.0-69b6ba2629-e7f44de651.zip/node_modules/@jest/expect-utils/",\
-        "packageDependencies": [\
-          ["@jest/expect-utils", "npm:29.5.0"],\
-          ["jest-get-type", "npm:29.4.3"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:29.6.1", {\
         "packageLocation": "./.yarn/cache/@jest-expect-utils-npm-29.6.1-76612c686f-e04164280c.zip/node_modules/@jest/expect-utils/",\
         "packageDependencies": [\
@@ -1291,19 +1263,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@jest/fake-timers", [\
-      ["npm:29.5.0", {\
-        "packageLocation": "./.yarn/cache/@jest-fake-timers-npm-29.5.0-2aa473528b-dbf52fd302.zip/node_modules/@jest/fake-timers/",\
-        "packageDependencies": [\
-          ["@jest/fake-timers", "npm:29.5.0"],\
-          ["@jest/types", "npm:29.5.0"],\
-          ["@sinonjs/fake-timers", "npm:10.0.2"],\
-          ["@types/node", "npm:18.16.1"],\
-          ["jest-message-util", "npm:29.5.0"],\
-          ["jest-mock", "npm:29.5.0"],\
-          ["jest-util", "npm:29.5.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:29.6.1", {\
         "packageLocation": "./.yarn/cache/@jest-fake-timers-npm-29.6.1-7eb309d4d4-112b1f26f4.zip/node_modules/@jest/fake-timers/",\
         "packageDependencies": [\
@@ -1319,17 +1278,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@jest/globals", [\
-      ["npm:29.5.0", {\
-        "packageLocation": "./.yarn/cache/@jest-globals-npm-29.5.0-422d68c3c4-0c25f07d81.zip/node_modules/@jest/globals/",\
-        "packageDependencies": [\
-          ["@jest/globals", "npm:29.5.0"],\
-          ["@jest/environment", "npm:29.5.0"],\
-          ["@jest/expect", "npm:29.5.0"],\
-          ["@jest/types", "npm:29.5.0"],\
-          ["jest-mock", "npm:29.5.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:29.6.1", {\
         "packageLocation": "./.yarn/cache/@jest-globals-npm-29.6.1-51aca361a9-9ee8a6e476.zip/node_modules/@jest/globals/",\
         "packageDependencies": [\
@@ -1445,28 +1393,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@jest/transform", [\
-      ["npm:29.5.0", {\
-        "packageLocation": "./.yarn/cache/@jest-transform-npm-29.5.0-0a2f81b553-113598311d.zip/node_modules/@jest/transform/",\
-        "packageDependencies": [\
-          ["@jest/transform", "npm:29.5.0"],\
-          ["@babel/core", "npm:7.21.4"],\
-          ["@jest/types", "npm:29.5.0"],\
-          ["@jridgewell/trace-mapping", "npm:0.3.18"],\
-          ["babel-plugin-istanbul", "npm:6.1.1"],\
-          ["chalk", "npm:4.1.1"],\
-          ["convert-source-map", "npm:2.0.0"],\
-          ["fast-json-stable-stringify", "npm:2.1.0"],\
-          ["graceful-fs", "npm:4.2.11"],\
-          ["jest-haste-map", "npm:29.5.0"],\
-          ["jest-regex-util", "npm:29.4.3"],\
-          ["jest-util", "npm:29.5.0"],\
-          ["micromatch", "npm:4.0.5"],\
-          ["pirates", "npm:4.0.4"],\
-          ["slash", "npm:3.0.0"],\
-          ["write-file-atomic", "npm:4.0.2"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:29.6.1", {\
         "packageLocation": "./.yarn/cache/@jest-transform-npm-29.6.1-174f89c3c2-e34ddd89f3.zip/node_modules/@jest/transform/",\
         "packageDependencies": [\
@@ -1688,8 +1614,8 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/stack-trace/",\
         "packageDependencies": [\
           ["@monstrs/stack-trace", "workspace:packages/stack-trace"],\
-          ["@jest/globals", "npm:29.5.0"],\
-          ["@types/node", "npm:20.2.5"],\
+          ["@jest/globals", "npm:29.6.1"],\
+          ["@types/node", "npm:20.4.1"],\
           ["@types/stack-utils", "npm:2.0.1"],\
           ["stack-utils", "npm:2.0.6"]\
         ],\
@@ -1720,9 +1646,9 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/webpack-source-map/",\
         "packageDependencies": [\
           ["@monstrs/webpack-source-map", "workspace:packages/webpack-source-map"],\
-          ["@jest/globals", "npm:29.5.0"],\
-          ["@types/node", "npm:20.2.5"],\
-          ["webpack", "virtual:f80f7f2e4dd9a51c1332dc853467f88f88af6454b3d95a341214904b644738733dfa60dc025253d89cdbc03e6610d99e855d16757981260a114a3e410d928995#npm:5.85.0"]\
+          ["@jest/globals", "npm:29.6.1"],\
+          ["@types/node", "npm:20.4.1"],\
+          ["webpack", "virtual:eb4547b200227ccd57c993829d4748ce2d921a744ed18dc7734e0d375922f65f16bf195729d1071dc7f32ead215e21a4a2672cb70a9ab18ba62cbb048795443c#npm:5.88.1"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -2202,10 +2128,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:20.2.5", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-20.2.5-0014d2d9ce-1c3db8a4ce.zip/node_modules/@types/node/",\
+      ["npm:20.4.1", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-20.4.1-16fae4d18f-000b001bc4.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:20.2.5"]\
+          ["@types/node", "npm:20.4.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3483,7 +3409,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["common-modules", "workspace:."],\
           ["@monstrs/tools-runtime", "npm:0.2.12"],\
-          ["@types/node", "npm:18.16.1"],\
+          ["@types/node", "npm:20.4.1"],\
           ["typescript", "patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
         ],\
         "linkType": "SOFT"\
@@ -3813,15 +3739,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/enhanced-resolve-npm-5.14.0-a8aca36878-33e6871586.zip/node_modules/enhanced-resolve/",\
         "packageDependencies": [\
           ["enhanced-resolve", "npm:5.14.0"],\
-          ["graceful-fs", "npm:4.2.11"],\
-          ["tapable", "npm:2.2.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:5.14.1", {\
-        "packageLocation": "./.yarn/cache/enhanced-resolve-npm-5.14.1-738959d0ac-65edb49549.zip/node_modules/enhanced-resolve/",\
-        "packageDependencies": [\
-          ["enhanced-resolve", "npm:5.14.1"],\
           ["graceful-fs", "npm:4.2.11"],\
           ["tapable", "npm:2.2.1"]\
         ],\
@@ -4510,18 +4427,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["expect", [\
-      ["npm:29.5.0", {\
-        "packageLocation": "./.yarn/cache/expect-npm-29.5.0-395e2d6fda-3c93829672.zip/node_modules/expect/",\
-        "packageDependencies": [\
-          ["expect", "npm:29.5.0"],\
-          ["@jest/expect-utils", "npm:29.5.0"],\
-          ["jest-get-type", "npm:29.4.3"],\
-          ["jest-matcher-utils", "npm:29.5.0"],\
-          ["jest-message-util", "npm:29.5.0"],\
-          ["jest-util", "npm:29.5.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:29.6.1", {\
         "packageLocation": "./.yarn/cache/expect-npm-29.6.1-1d485bb2bb-8ffdd2c8c0.zip/node_modules/expect/",\
         "packageDependencies": [\
@@ -5628,17 +5533,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["jest-diff", [\
-      ["npm:29.5.0", {\
-        "packageLocation": "./.yarn/cache/jest-diff-npm-29.5.0-5c9573ed73-00fda597fa.zip/node_modules/jest-diff/",\
-        "packageDependencies": [\
-          ["jest-diff", "npm:29.5.0"],\
-          ["chalk", "npm:4.1.1"],\
-          ["diff-sequences", "npm:29.4.3"],\
-          ["jest-get-type", "npm:29.4.3"],\
-          ["pretty-format", "npm:29.5.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:29.6.1", {\
         "packageLocation": "./.yarn/cache/jest-diff-npm-29.6.1-5db9e52cf2-f067d97793.zip/node_modules/jest-diff/",\
         "packageDependencies": [\
@@ -5751,17 +5645,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["jest-matcher-utils", [\
-      ["npm:29.5.0", {\
-        "packageLocation": "./.yarn/cache/jest-matcher-utils-npm-29.5.0-f255c78df4-0a3ae95ef5.zip/node_modules/jest-matcher-utils/",\
-        "packageDependencies": [\
-          ["jest-matcher-utils", "npm:29.5.0"],\
-          ["chalk", "npm:4.1.1"],\
-          ["jest-diff", "npm:29.5.0"],\
-          ["jest-get-type", "npm:29.4.3"],\
-          ["pretty-format", "npm:29.5.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:29.6.1", {\
         "packageLocation": "./.yarn/cache/jest-matcher-utils-npm-29.6.1-8914876019-4425bcb900.zip/node_modules/jest-matcher-utils/",\
         "packageDependencies": [\
@@ -5775,22 +5658,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["jest-message-util", [\
-      ["npm:29.5.0", {\
-        "packageLocation": "./.yarn/cache/jest-message-util-npm-29.5.0-910b21363f-706e89cacc.zip/node_modules/jest-message-util/",\
-        "packageDependencies": [\
-          ["jest-message-util", "npm:29.5.0"],\
-          ["@babel/code-frame", "npm:7.21.4"],\
-          ["@jest/types", "npm:29.5.0"],\
-          ["@types/stack-utils", "npm:2.0.0"],\
-          ["chalk", "npm:4.1.1"],\
-          ["graceful-fs", "npm:4.2.11"],\
-          ["micromatch", "npm:4.0.5"],\
-          ["pretty-format", "npm:29.5.0"],\
-          ["slash", "npm:3.0.0"],\
-          ["stack-utils", "npm:2.0.3"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:29.6.1", {\
         "packageLocation": "./.yarn/cache/jest-message-util-npm-29.6.1-686c290726-7a34c7ee4e.zip/node_modules/jest-message-util/",\
         "packageDependencies": [\
@@ -5809,16 +5676,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["jest-mock", [\
-      ["npm:29.5.0", {\
-        "packageLocation": "./.yarn/cache/jest-mock-npm-29.5.0-d14983d2ac-c5b71d397d.zip/node_modules/jest-mock/",\
-        "packageDependencies": [\
-          ["jest-mock", "npm:29.5.0"],\
-          ["@jest/types", "npm:29.5.0"],\
-          ["@types/node", "npm:18.16.1"],\
-          ["jest-util", "npm:29.5.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:29.6.1", {\
         "packageLocation": "./.yarn/cache/jest-mock-npm-29.6.1-d02696f609-26e666787d.zip/node_modules/jest-mock/",\
         "packageDependencies": [\
@@ -5981,36 +5838,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["jest-snapshot", [\
-      ["npm:29.5.0", {\
-        "packageLocation": "./.yarn/cache/jest-snapshot-npm-29.5.0-2187ce2f07-db9957d9c8.zip/node_modules/jest-snapshot/",\
-        "packageDependencies": [\
-          ["jest-snapshot", "npm:29.5.0"],\
-          ["@babel/core", "npm:7.21.4"],\
-          ["@babel/generator", "npm:7.21.4"],\
-          ["@babel/plugin-syntax-jsx", "virtual:4ae4774c2b4c41059da5ab365c074b93cd1cf1acf383deda3a0095200b19194b426b537cccc7e196f90a459310548a4dc5eedef7e1c71e9608289bca598a463b#npm:7.21.4"],\
-          ["@babel/plugin-syntax-typescript", "virtual:4ae4774c2b4c41059da5ab365c074b93cd1cf1acf383deda3a0095200b19194b426b537cccc7e196f90a459310548a4dc5eedef7e1c71e9608289bca598a463b#npm:7.16.7"],\
-          ["@babel/traverse", "npm:7.21.4"],\
-          ["@babel/types", "npm:7.21.4"],\
-          ["@jest/expect-utils", "npm:29.5.0"],\
-          ["@jest/transform", "npm:29.5.0"],\
-          ["@jest/types", "npm:29.5.0"],\
-          ["@types/babel__traverse", "npm:7.11.0"],\
-          ["@types/prettier", "npm:2.4.3"],\
-          ["babel-preset-current-node-syntax", "virtual:4ae4774c2b4c41059da5ab365c074b93cd1cf1acf383deda3a0095200b19194b426b537cccc7e196f90a459310548a4dc5eedef7e1c71e9608289bca598a463b#npm:1.0.0"],\
-          ["chalk", "npm:4.1.1"],\
-          ["expect", "npm:29.5.0"],\
-          ["graceful-fs", "npm:4.2.11"],\
-          ["jest-diff", "npm:29.5.0"],\
-          ["jest-get-type", "npm:29.4.3"],\
-          ["jest-matcher-utils", "npm:29.5.0"],\
-          ["jest-message-util", "npm:29.5.0"],\
-          ["jest-util", "npm:29.5.0"],\
-          ["natural-compare", "npm:1.4.0"],\
-          ["pretty-format", "npm:29.5.0"],\
-          ["semver", "npm:7.5.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:29.6.1", {\
         "packageLocation": "./.yarn/cache/jest-snapshot-npm-29.6.1-4ae4774c2b-1322fb9b23.zip/node_modules/jest-snapshot/",\
         "packageDependencies": [\
@@ -7853,36 +7680,6 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:6c50a7138ceb22736afd8d4851e86f89e452eec1191c7de46540120b24908fd74ec8a9238ffd80a5f5e8c984e2969b813891dfe7badd2cc7caf71e6a0f19106e#npm:5.3.7", {\
-        "packageLocation": "./.yarn/__virtual__/terser-webpack-plugin-virtual-d986cd3c18/0/cache/terser-webpack-plugin-npm-5.3.7-4bfad49798-fe54487e67.zip/node_modules/terser-webpack-plugin/",\
-        "packageDependencies": [\
-          ["terser-webpack-plugin", "virtual:6c50a7138ceb22736afd8d4851e86f89e452eec1191c7de46540120b24908fd74ec8a9238ffd80a5f5e8c984e2969b813891dfe7badd2cc7caf71e6a0f19106e#npm:5.3.7"],\
-          ["@jridgewell/trace-mapping", "npm:0.3.18"],\
-          ["@swc/core", null],\
-          ["@types/esbuild", null],\
-          ["@types/swc__core", null],\
-          ["@types/uglify-js", null],\
-          ["@types/webpack", null],\
-          ["esbuild", null],\
-          ["jest-worker", "npm:27.5.1"],\
-          ["schema-utils", "npm:3.1.2"],\
-          ["serialize-javascript", "npm:6.0.1"],\
-          ["terser", "npm:5.17.1"],\
-          ["uglify-js", null],\
-          ["webpack", "virtual:f80f7f2e4dd9a51c1332dc853467f88f88af6454b3d95a341214904b644738733dfa60dc025253d89cdbc03e6610d99e855d16757981260a114a3e410d928995#npm:5.85.0"]\
-        ],\
-        "packagePeers": [\
-          "@swc/core",\
-          "@types/esbuild",\
-          "@types/swc__core",\
-          "@types/uglify-js",\
-          "@types/webpack",\
-          "esbuild",\
-          "uglify-js",\
-          "webpack"\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["virtual:e12df1078c830a75eac1e2a01f6bdd04399446cb9f6ffafee90b8d1f89b4922a76ea0458086f2cb05932fa681839d2c90989427b7166bef07bf95b6b4510cd86#npm:5.3.7", {\
         "packageLocation": "./.yarn/__virtual__/terser-webpack-plugin-virtual-3ec3d1d9b0/0/cache/terser-webpack-plugin-npm-5.3.7-4bfad49798-fe54487e67.zip/node_modules/terser-webpack-plugin/",\
         "packageDependencies": [\
@@ -8316,13 +8113,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["webpack", [\
-      ["npm:5.85.0", {\
-        "packageLocation": "./.yarn/cache/webpack-npm-5.85.0-11652af5db-93552ef4ac.zip/node_modules/webpack/",\
-        "packageDependencies": [\
-          ["webpack", "npm:5.85.0"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
       ["npm:5.88.1", {\
         "packageLocation": "./.yarn/cache/webpack-npm-5.88.1-b68c09f1a7-03389ad023.zip/node_modules/webpack/",\
         "packageDependencies": [\
@@ -8357,43 +8147,6 @@ const RAW_RUNTIME_STATE =
           ["schema-utils", "npm:3.3.0"],\
           ["tapable", "npm:2.2.1"],\
           ["terser-webpack-plugin", "virtual:e12df1078c830a75eac1e2a01f6bdd04399446cb9f6ffafee90b8d1f89b4922a76ea0458086f2cb05932fa681839d2c90989427b7166bef07bf95b6b4510cd86#npm:5.3.7"],\
-          ["watchpack", "npm:2.4.0"],\
-          ["webpack-cli", null],\
-          ["webpack-sources", "npm:3.2.3"]\
-        ],\
-        "packagePeers": [\
-          "@types/webpack-cli",\
-          "webpack-cli"\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["virtual:f80f7f2e4dd9a51c1332dc853467f88f88af6454b3d95a341214904b644738733dfa60dc025253d89cdbc03e6610d99e855d16757981260a114a3e410d928995#npm:5.85.0", {\
-        "packageLocation": "./.yarn/__virtual__/webpack-virtual-6c50a7138c/0/cache/webpack-npm-5.85.0-11652af5db-93552ef4ac.zip/node_modules/webpack/",\
-        "packageDependencies": [\
-          ["webpack", "virtual:f80f7f2e4dd9a51c1332dc853467f88f88af6454b3d95a341214904b644738733dfa60dc025253d89cdbc03e6610d99e855d16757981260a114a3e410d928995#npm:5.85.0"],\
-          ["@types/eslint-scope", "npm:3.7.4"],\
-          ["@types/estree", "npm:1.0.1"],\
-          ["@types/webpack-cli", null],\
-          ["@webassemblyjs/ast", "npm:1.11.5"],\
-          ["@webassemblyjs/wasm-edit", "npm:1.11.5"],\
-          ["@webassemblyjs/wasm-parser", "npm:1.11.5"],\
-          ["acorn", "npm:8.8.2"],\
-          ["acorn-import-assertions", "virtual:e12df1078c830a75eac1e2a01f6bdd04399446cb9f6ffafee90b8d1f89b4922a76ea0458086f2cb05932fa681839d2c90989427b7166bef07bf95b6b4510cd86#npm:1.9.0"],\
-          ["browserslist", "npm:4.21.5"],\
-          ["chrome-trace-event", "npm:1.0.3"],\
-          ["enhanced-resolve", "npm:5.14.1"],\
-          ["es-module-lexer", "npm:1.2.1"],\
-          ["eslint-scope", "npm:5.1.1"],\
-          ["events", "npm:3.3.0"],\
-          ["glob-to-regexp", "npm:0.4.1"],\
-          ["graceful-fs", "npm:4.2.11"],\
-          ["json-parse-even-better-errors", "npm:2.3.1"],\
-          ["loader-runner", "npm:4.3.0"],\
-          ["mime-types", "npm:2.1.35"],\
-          ["neo-async", "npm:2.6.2"],\
-          ["schema-utils", "npm:3.1.2"],\
-          ["tapable", "npm:2.2.1"],\
-          ["terser-webpack-plugin", "virtual:6c50a7138ceb22736afd8d4851e86f89e452eec1191c7de46540120b24908fd74ec8a9238ffd80a5f5e8c984e2969b813891dfe7badd2cc7caf71e6a0f19106e#npm:5.3.7"],\
           ["watchpack", "npm:2.4.0"],\
           ["webpack-cli", null],\
           ["webpack-sources", "npm:3.2.3"]\
