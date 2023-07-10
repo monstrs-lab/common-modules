@@ -17,9 +17,9 @@
     "postpack": "rm -rf dist"
   },
   "devDependencies": {
-    "@jest/globals": "^29.5.0",
-    "@types/node": "^20.2.5",
-    "webpack": "^5.85.0"
+    "@jest/globals": "^29.6.1",
+    "@types/node": "^20.4.1",
+    "webpack": "^5.88.1"
   },
   "publishConfig": {
     "exports": {
