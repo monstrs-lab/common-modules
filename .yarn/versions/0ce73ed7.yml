@@ -1,0 +1,3 @@
+releases:
+  "@monstrs/stack-trace": patch
+  "@monstrs/webpack-source-map": patch
