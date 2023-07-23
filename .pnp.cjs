@@ -14,6 +14,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:."\
     },\
     {\
+      "name": "@monstrs/guard-clause",\
+      "reference": "workspace:packages/guard-clause"\
+    },\
+    {\
       "name": "@monstrs/stack-trace",\
       "reference": "workspace:packages/stack-trace"\
     },\
@@ -25,6 +29,7 @@ const RAW_RUNTIME_STATE =
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
+    ["@monstrs/guard-clause", ["workspace:packages/guard-clause"]],\
     ["@monstrs/stack-trace", ["workspace:packages/stack-trace"]],\
     ["@monstrs/webpack-source-map", ["workspace:packages/webpack-source-map"]],\
     ["common-modules", ["workspace:."]]\
@@ -1599,6 +1604,17 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@monstrs/guard-clause", [\
+      ["workspace:packages/guard-clause", {\
+        "packageLocation": "./packages/guard-clause/",\
+        "packageDependencies": [\
+          ["@monstrs/guard-clause", "workspace:packages/guard-clause"],\
+          ["@types/validator", "npm:13.7.17"],\
+          ["validator", "npm:13.9.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
     ["@monstrs/jest-resolver", [\
       ["npm:0.3.3", {\
         "packageLocation": "./.yarn/cache/@monstrs-jest-resolver-npm-0.3.3-462d504090-67979c5237.zip/node_modules/@monstrs/jest-resolver/",\
@@ -2166,6 +2182,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-stack-utils-npm-2.0.1-867718ab70-3327ee919a.zip/node_modules/@types/stack-utils/",\
         "packageDependencies": [\
           ["@types/stack-utils", "npm:2.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/validator", [\
+      ["npm:13.7.17", {\
+        "packageLocation": "./.yarn/cache/@types-validator-npm-13.7.17-200baed5c4-46ec9b8bc1.zip/node_modules/@types/validator/",\
+        "packageDependencies": [\
+          ["@types/validator", "npm:13.7.17"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8075,6 +8100,15 @@ const RAW_RUNTIME_STATE =
           ["@jridgewell/trace-mapping", "npm:0.3.18"],\
           ["@types/istanbul-lib-coverage", "npm:2.0.3"],\
           ["convert-source-map", "npm:1.7.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["validator", [\
+      ["npm:13.9.0", {\
+        "packageLocation": "./.yarn/cache/validator-npm-13.9.0-54b07e9e81-0a0af4b377.zip/node_modules/validator/",\
+        "packageDependencies": [\
+          ["validator", "npm:13.9.0"]\
         ],\
         "linkType": "HARD"\
       }]\
