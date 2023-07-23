@@ -1079,6 +1079,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@monstrs/guard-clause@workspace:packages/guard-clause":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/guard-clause@workspace:packages/guard-clause"
+  dependencies:
+    "@types/validator": "npm:^13.7.17"
+    validator: "npm:^13.9.0"
+  languageName: unknown
+  linkType: soft
+
 "@monstrs/jest-resolver@npm:0.3.3":
   version: 0.3.3
   resolution: "@monstrs/jest-resolver@npm:0.3.3"
@@ -1477,6 +1486,13 @@ __metadata:
   version: 2.0.1
   resolution: "@types/stack-utils@npm:2.0.1"
   checksum: 3327ee919a840ffe907bbd5c1d07dfd79137dd9732d2d466cf717ceec5bb21f66296173c53bb56cff95fae4185b9cd6770df3e9745fe4ba528bbc4975f54d13f
+  languageName: node
+  linkType: hard
+
+"@types/validator@npm:^13.7.17":
+  version: 13.7.17
+  resolution: "@types/validator@npm:13.7.17"
+  checksum: 46ec9b8bc11d91a575aead891a9c1d2f23bc28369449cb62415d663262d1d0e96debe75ceac626102a17a0a7a899330626ec36c8d4e84d337c705daed314fed5
   languageName: node
   linkType: hard
 
@@ -6452,6 +6468,13 @@ __metadata:
     "@types/istanbul-lib-coverage": "npm:^2.0.1"
     convert-source-map: "npm:^1.6.0"
   checksum: 657ef7c52a514c1a0769663f96dd6f2cd11d2d3f6c8272d1035f4a543dca0b52c84b005beb7f0ca215eb98425c8bc4aa92a62826b1fc76abc1f7228d33ccbc60
+  languageName: node
+  linkType: hard
+
+"validator@npm:^13.9.0":
+  version: 13.9.0
+  resolution: "validator@npm:13.9.0"
+  checksum: 0a0af4b37779671b53ef790aa9d36f71a605c9d41c6daf198d2a1051ce549bcdca3313fa3b52c8fa24577e1a4968ec9404ad8a928d3607d51bccef6d6e33bee7
   languageName: node
   linkType: hard
 
