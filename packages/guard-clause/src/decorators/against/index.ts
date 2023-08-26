@@ -9,6 +9,7 @@ import { NotEnumDecoratorFactory }                   from './not-enum.decorator.
 import { NotOneOfDecoratorFactory }                  from './not-one-of.decorator.factory.js'
 import { NotStringLengthBetweenDecoratorFactory }    from './not-string-length-betwee.decorator.factory.js'
 import { NotISO4217DecoratorFactory }                from './not-iso4217.decorator.factory.js'
+import { NotJsonSchemaValidDecoratorFactory }        from './not-json-schema-valid.decorator.factory.js'
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const factory = (name: string, options?: AbstractGuardExtensionFactoryOptions['options']) => ({
@@ -21,6 +22,7 @@ const factory = (name: string, options?: AbstractGuardExtensionFactoryOptions['o
   NotOneOf: NotOneOfDecoratorFactory(name, options),
   NotStringLengthBetween: NotStringLengthBetweenDecoratorFactory(name, options),
   NotISO4217: NotISO4217DecoratorFactory(name, options),
+  NotJsonSchemaValid: NotJsonSchemaValidDecoratorFactory(name, options),
 })
 
 export const Against = (
