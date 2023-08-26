@@ -10,7 +10,7 @@ export const NotJsonSchemaValidDecoratorFactory = (
   ) =>
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   (schema: any, defs?: Array<any>): DecoratorFactoryFn =>
-    function NotEnum(target: any, propertyKey: string, parameterIndex: number): void {
+    function NotJsonSchemaValid(target: any, propertyKey: string, parameterIndex: number): void {
       GuardFactory.register(
         NotJsonSchemaValidGuardExtensionFactory,
         target,
