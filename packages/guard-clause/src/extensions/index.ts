@@ -8,6 +8,7 @@ import { NotEnumGuardExtensionFactory }                from './not-enum-guard.ex
 import { NotOneOfGuardExtensionFactory }               from './not-one-of-guard.extension.factory.js'
 import { NotStringLengthBetweenGuardExtensionFactory } from './not-string-length-between.extension.factory.js'
 import { NotISO4217GuardExtensionFactory }             from './not-iso4217-guard.extension.factory.js'
+import { NotJsonSchemaValidGuardExtensionFactory }     from './not-json-schema-valid.extension.factory.js'
 
 export * from './not-empty-guard.extension.factory.js'
 export * from './not-uuid-guard.extension.factory.js'
@@ -18,6 +19,7 @@ export * from './not-enum-guard.extension.factory.js'
 export * from './not-one-of-guard.extension.factory.js'
 export * from './not-string-length-between.extension.factory.js'
 export * from './not-iso4217-guard.extension.factory.js'
+export * from './not-json-schema-valid.extension.factory.js'
 
 GuardFactory.registerExtension(new NotEmptyGuardExtensionFactory())
 GuardFactory.registerExtension(new NotUUIDGuardExtensionFactory())
@@ -28,3 +30,4 @@ GuardFactory.registerExtension(new NotEnumGuardExtensionFactory())
 GuardFactory.registerExtension(new NotOneOfGuardExtensionFactory())
 GuardFactory.registerExtension(new NotStringLengthBetweenGuardExtensionFactory())
 GuardFactory.registerExtension(new NotISO4217GuardExtensionFactory())
+GuardFactory.registerExtension(new NotJsonSchemaValidGuardExtensionFactory())
