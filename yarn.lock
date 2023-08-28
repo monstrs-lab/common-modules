@@ -1079,6 +1079,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@monstrs/core-errors@workspace:packages/core-errors":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/core-errors@workspace:packages/core-errors"
+  languageName: unknown
+  linkType: soft
+
 "@monstrs/guard-clause@workspace:packages/guard-clause":
   version: 0.0.0-use.local
   resolution: "@monstrs/guard-clause@workspace:packages/guard-clause"

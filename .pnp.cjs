@@ -14,6 +14,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:."\
     },\
     {\
+      "name": "@monstrs/core-errors",\
+      "reference": "workspace:packages/core-errors"\
+    },\
+    {\
       "name": "@monstrs/guard-clause",\
       "reference": "workspace:packages/guard-clause"\
     },\
@@ -29,6 +33,7 @@ const RAW_RUNTIME_STATE =
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
+    ["@monstrs/core-errors", ["workspace:packages/core-errors"]],\
     ["@monstrs/guard-clause", ["workspace:packages/guard-clause"]],\
     ["@monstrs/stack-trace", ["workspace:packages/stack-trace"]],\
     ["@monstrs/webpack-source-map", ["workspace:packages/webpack-source-map"]],\
@@ -1602,6 +1607,15 @@ const RAW_RUNTIME_STATE =
           ["@monstrs/config-typescript", "npm:0.3.6"]\
         ],\
         "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@monstrs/core-errors", [\
+      ["workspace:packages/core-errors", {\
+        "packageLocation": "./packages/core-errors/",\
+        "packageDependencies": [\
+          ["@monstrs/core-errors", "workspace:packages/core-errors"]\
+        ],\
+        "linkType": "SOFT"\
       }]\
     ]],\
     ["@monstrs/guard-clause", [\
