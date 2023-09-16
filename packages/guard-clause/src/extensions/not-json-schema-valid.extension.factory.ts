@@ -4,8 +4,8 @@ import type { AbstractGuardExtensionFactoryOptions } from '../factory/index.js'
 
 import AjvPkg                                        from 'ajv'
 
-import { AbstractGuardExtensionFactory }             from '../factory/index.js'
 import { GuardError }                                from '../errors/index.js'
+import { AbstractGuardExtensionFactory }             from '../factory/index.js'
 
 const Ajv = AjvPkg.default || AjvPkg
 
