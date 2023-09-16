@@ -1,7 +1,7 @@
 import type { SourceMapPayload } from 'node:module'
 
-import { SourceMap }             from 'node:module'
 import { execSync }              from 'node:child_process'
+import { SourceMap }             from 'node:module'
 
 export const load = (file: string, target: string): string | null => {
   try {
