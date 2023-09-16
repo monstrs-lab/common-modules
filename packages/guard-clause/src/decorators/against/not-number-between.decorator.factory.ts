@@ -1,8 +1,8 @@
 import type { AbstractGuardExtensionFactoryOptions } from '../../factory/index.js'
 import type { DecoratorFactoryFn }                   from './decorator.interfaces.js'
 
-import { GuardFactory }                              from '../../factory/index.js'
 import { NotNumberBetweenGuardExtensionFactory }     from '../../extensions/index.js'
+import { GuardFactory }                              from '../../factory/index.js'
 
 export const NotNumberBetweenDecoratorFactory = (
     parameter: string,
