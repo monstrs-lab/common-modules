@@ -1,3 +1,5 @@
+/* eslint-disable n/no-sync */
+
 import type { SourceMapPayload } from 'node:module'
 
 import { execSync }              from 'node:child_process'
