@@ -8,7 +8,7 @@ export const NotEnumDecoratorFactory = (
     parameter: string,
     options?: AbstractGuardExtensionFactoryOptions['options']
   ) =>
-  (targetEnum: object): DecoratorFactoryFn =>
+  (targetEnum: Array<object> | object): DecoratorFactoryFn =>
     function NotEnum(target: any, propertyKey: string, parameterIndex: number): void {
       GuardFactory.register(NotEnumGuardExtensionFactory, target, propertyKey, parameterIndex, {
         parameter,

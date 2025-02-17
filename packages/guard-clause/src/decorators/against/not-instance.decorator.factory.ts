@@ -9,7 +9,7 @@ export const NotInstanceDecoratorFactory = (
     options?: AbstractGuardExtensionFactoryOptions['options']
   ) =>
   // eslint-disable-next-line @typescript-eslint/ban-types
-  (targetTypeConstructor: Function): DecoratorFactoryFn =>
+  (targetTypeConstructor: Array<Function> | Function): DecoratorFactoryFn =>
     function NotInstance(target: any, propertyKey: string, parameterIndex: number): void {
       GuardFactory.register(NotInstanceGuardExtensionFactory, target, propertyKey, parameterIndex, {
         parameter,
