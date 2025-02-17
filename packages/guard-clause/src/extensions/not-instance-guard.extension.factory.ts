@@ -6,21 +6,28 @@ import { AbstractGuardExtensionFactory }             from '../factory/index.js'
 export class NotInstanceGuardExtensionFactory extends AbstractGuardExtensionFactory {
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   override performParamValue(paramValue: any, options: AbstractGuardExtensionFactoryOptions): void {
-    if (
-      !(
-        options.metadata!.targetTypeConstructor &&
-        typeof options.metadata!.targetTypeConstructor === 'function' &&
-        paramValue instanceof options.metadata!.targetTypeConstructor
-      )
-    ) {
+    const targetTypeConstructors = Array.isArray(options.metadata!.targetTypeConstructor)
+      ? options.metadata!.targetTypeConstructor
+      : [options.metadata!.targetTypeConstructor]
+
+    const isMatched = targetTypeConstructors.some(
+      (targetTypeConstructor) =>
+        targetTypeConstructor &&
+        typeof targetTypeConstructor === 'function' &&
+        paramValue instanceof targetTypeConstructor
+    )
+
+    if (!isMatched) {
       throw new GuardError(
         'guard.against.not-instance',
         options.parameter,
         paramValue,
-        `not instance '${
-          (options.metadata!.targetTypeConstructor?.name ||
-            options.metadata!.targetTypeConstructor) as string
-        }'`
+        `not instance '${targetTypeConstructors
+          .map(
+            (targetTypeConstructor) =>
+              (targetTypeConstructor?.name as string) || (targetTypeConstructor as string)
+          )
+          .join(' or ')}'`
       )
     }
   }
